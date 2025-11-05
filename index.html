@@ -3,54 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Página de Bienvenida - Bono 30%</title>
+    <title>WINZONE - Acceso VIP Exclusivo</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            margin: 0;
+            padding: 0;
+            /* Fondo con degradado similar al de la imagen */
+            background: linear-gradient(to bottom, #4a0d8e, #2a0050); /* Púrpura oscuro a más oscuro */
+            color: #ffffff; /* Texto blanco */
+            min-height: 100vh; /* Ocupa al menos toda la altura de la vista */
+            display: flex;
+            align-items: center; /* Centra verticalmente */
+            justify-content: center; /* Centra horizontalmente */
         }
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px; /* Ajustado para el tamaño de móvil de la imagen */
+            margin: 20px auto;
+            padding: 30px 20px;
+            background-color: rgba(0, 0, 0, 0.2); /* Fondo ligeramente transparente para el "cartón" */
+            border-radius: 15px; /* Bordes más redondeados */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
         }
-        img {
-            max-width: 100%;
+        .logo {
+            max-width: 80%; /* Ajuste de tamaño para el logo */
             height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
-        
-        /* 🟢 ESTILOS DEL BOTÓN DE WHATSAPP (AUMENTADO) 🟢 */
+        .title {
+            font-size: 1.3em;
+            color: #e0b0ff; /* Púrpura claro */
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .bonus-text {
+            font-size: 3.5em; /* Tamaño grande para el bono */
+            font-weight: bold;
+            color: #ffd700; /* Dorado para el número */
+            text-shadow: 
+                -2px -2px 0 #8b4513, /* Sombra para efecto 3D */
+                2px -2px 0 #8b4513,
+                -2px 2px 0 #8b4513,
+                2px 2px 0 #8b4513,
+                0px 5px 10px rgba(0,0,0,0.5); /* Sombra suave para profundidad */
+            margin-bottom: 15px;
+            line-height: 1.0;
+        }
+        .cta-text {
+            font-size: 1.1em;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+        }
+        .name-input {
+            width: calc(100% - 40px); /* Ancho completo menos padding */
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 30px; /* Bordes muy redondeados */
+            border: 2px solid #6a0dad; /* Borde púrpura */
+            background-color: #2a0050; /* Fondo oscuro */
+            color: #ffffff;
+            font-size: 1em;
+            text-align: center;
+            box-sizing: border-box; /* Incluye padding y borde en el ancho */
+        }
+        .name-input::placeholder {
+            color: #bbb;
+            opacity: 0.8;
+        }
+
+        /* 🟢 ESTILOS DEL BOTÓN DE WHATSAPP (Adaptado al diseño) 🟢 */
         .whatsapp-button {
-            display: inline-block;
-            /* Aumentamos el relleno para hacerlo mucho más grande en móvil */
-            padding: 20px 40px; 
-            margin-top: 25px; 
-            background-color: #25D366; /* Color de WhatsApp */
+            display: flex; /* Para centrar el icono y texto */
+            align-items: center;
+            justify-content: center;
+            padding: 15px 30px; /* Tamaño del botón */
+            margin-top: 20px;
+            background: linear-gradient(to right, #25D366, #1dbb5b); /* Degradado verde */
             color: white;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            /* Aumentamos el tamaño de la fuente */
-            font-size: 1.4em; 
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            
-            /* APLICACIÓN DE LA ANIMACIÓN DE MOVIMIENTO CONSTANTE */
-            animation: pulse 1.5s infinite; 
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para el botón */
+            animation: pulse 1.5s infinite; /* Animación de pulsación */
         }
-        
-        /* Efecto al pasar el cursor (Hover) */
         .whatsapp-button:hover {
-            background-color: #128C7E; 
-            transform: scale(1.05); 
-            animation: none; 
+            background: linear-gradient(to right, #1dbb5b, #128C7E); /* Degradado más oscuro al hover */
+            transform: scale(1.03); /* Se agranda ligeramente */
+            animation: none; /* Detenemos la animación constante al hacer hover */
+        }
+        .whatsapp-icon {
+            margin-right: 10px;
+            font-size: 1.5em; /* Tamaño del icono */
         }
 
         /* DEFINICIÓN DE LA ANIMACIÓN (PULSACIÓN) */
@@ -72,35 +121,17 @@
 </head>
 <body>
     <div class="container">
-        <img src="CASINO.png" alt="Imagen de Bienvenida" width="400">
+        <img src="WINZONE.png" class="logo" alt="WINZONE"> 
+        <p class="title">ACCESO VIP EXCLUSIVO</p>
+        <p class="bonus-text">BONO<br>20%</p>
+        
+        <p class="cta-text">ESCRIBINOS APRETANDO EL BOTÓN DE ABAJO</p>
 
-        <h1>¡Hola y Bienvenido/a!</h1>
-        <p>Estamos muy emocionados de verte por aquí. Queremos darte un:</p>
-        <h2>🎁 Bono de Bienvenida 30% 🎁</h2>
-        <p>Haz clic en el botón de WhatsApp abajo para reclamar tu bono. Te responderemos lo antes posible.</p>
+        <input type="text" class="name-input" placeholder="Ingresa tu nombre">
 
-        <a href="https://wa.me/543416404990?text=Hola%2C%20quiero%20reclamar%20mi%20Bono%20de%20Bienvenida." target="_blank" class="whatsapp-button">
-            Chatear por WhatsApp
+        <a href="https://wa.me/543416404990?text=Hola%2C%20quiero%20reclamar%20mi%20Bono%20del%2020%25%20VIP." target="_blank" class="whatsapp-button">
+            <span class="whatsapp-icon">&#x1F4AC;</span> OBTENER MI BONO AHORA
         </a>
-        <p style="margin-top: 20px; font-size: 0.8em; color: #666;">*Se aplican términos y condiciones.</p>
-
-        ---
-
-        <div style="margin-top: 30px; padding: 15px; border-radius: 8px; background-color: #e6ffe6; border: 1px solid #25D366;">
-            <h3>¿Por qué contactarnos ahora?</h3>
-            <ul style="list-style: none; padding: 0; text-align: left; font-size: 1em;">
-                <li style="margin-bottom: 10px;">🏆 Recibe tu **Bono 30%** al instante.</li>
-                <li style="margin-bottom: 10px;">⚡ Atención al cliente **rápida** y 24/7.</li>
-                <li style="margin-bottom: 10px;">🔒 Plataforma **segura** y de confianza.</li>
-            </ul>
-        </div>
-        
- 
-        
-        <footer style="margin-top: 40px; padding-top: 15px; border-top: 1px solid #eee; font-size: 0.8em; color: #999;">
-            <p>&copy; 2025 [WINZONE]. Todos los derechos reservados.</p>
-            <p>Contacto: +54 341-6404-990 // +54 11-5690-8206</p>
-        </footer>
     </div>
 </body>
 </html>
