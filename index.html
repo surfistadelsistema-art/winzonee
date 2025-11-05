@@ -1,47 +1,67 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Página de Bienvenida - GitHub Pages</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+<style>
+    body {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    
+    /* ESTILOS DEL BOTÓN DE WHATSAPP */
+    .whatsapp-button {
+        display: inline-block;
+        padding: 15px 30px;
+        margin-top: 20px;
+        background-color: #25D366; /* Color de WhatsApp */
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1.2em;
+        /* Habilitar Transiciones para efectos suaves */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        
+        /* 💡 APLICACIÓN DE LA ANIMACIÓN DE MOVIMIENTO CONSTANTE */
+        animation: pulse 1.5s infinite; /* Nombre, duración, repetir indefinidamente */
+    }
+    
+    /* Efecto al pasar el cursor (Hover) */
+    .whatsapp-button:hover {
+        background-color: #128C7E; /* Color más oscuro */
+        transform: scale(1.05); /* Se agranda ligeramente al pasar el mouse */
+        animation: none; /* Detenemos la animación constante al hacer hover */
+    }
+
+    /* 🕺 DEFINICIÓN DE LA ANIMACIÓN (KEYFRAMES) */
+    @keyframes pulse {
+        0% {
+            transform: scale(1); /* Tamaño normal */
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); /* Sombra transparente */
         }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        70% {
+            transform: scale(1.05); /* Se agranda ligeramente */
+            box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); /* La sombra se expande y se hace transparente */
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
+        100% {
+            transform: scale(1); /* Vuelve al tamaño normal */
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
         }
-        .whatsapp-button {
-            display: inline-block;
-            padding: 15px 30px;
-            margin-top: 20px;
-            background-color: #25D366; /* Color de WhatsApp */
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
-        }
-        .whatsapp-button:hover {
-            background-color: #128C7E;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
     <div class="container">
