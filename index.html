@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WINZONE - Acceso VIP Exclusivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,26 +22,26 @@
         .container {
             max-width: 400px; 
             margin: 20px auto;
-            /* Reducimos el padding interno del contenedor */
-            padding: 20px 20px; 
+            /* Padding del contenedor ligeramente reducido */
+            padding: 15px 20px; 
             background-color: rgba(0, 0, 0, 0.2); 
             border-radius: 15px; 
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); 
             border: 1px solid rgba(255, 255, 255, 0.1); 
         }
-        /* 🖼️ LOGO (Espaciado reducido) */
+        /* 🖼️ LOGO (Espaciado aún más reducido) */
         .logo {
             max-width: 60%; 
             height: auto;
-            /* Reducimos el margen inferior */
-            margin-bottom: 10px; 
+            /* Margen inferior muy reducido */
+            margin-bottom: 5px; 
         }
         /* Título VIP (Espaciado reducido) */
         .title {
             font-size: 1.3em;
             color: #e0b0ff;
-            /* Reducimos el margen inferior */
-            margin-bottom: 5px; 
+            /* Margen inferior muy reducido */
+            margin-bottom: 0px; 
             letter-spacing: 1px;
             text-transform: uppercase;
         }
@@ -54,25 +56,25 @@
                 -2px 2px 0 #b38800,
                 2px 2px 0 #b38800,
                 0px 5px 10px rgba(0,0,0,0.5); 
-            /* Reducimos el margen inferior */
-            margin-bottom: 10px; 
+            /* Margen inferior muy reducido */
+            margin-bottom: 5px; 
             line-height: 1.0;
             animation: pulse-bonus 2s infinite; 
         }
         /* 💬 Texto CTA (Espaciado reducido) */
         .cta-text {
             font-size: 1.1em;
-            /* Reducimos el margen superior e inferior */
-            margin-top: 15px; 
-            margin-bottom: 15px; 
+            /* Margen superior e inferior muy reducidos */
+            margin-top: 10px; 
+            margin-bottom: 10px; 
             color: #e0e0e0;
         }
         /* Campo de Nombre */
         .name-input {
             width: calc(100% - 40px);
             padding: 15px 20px;
-            /* Reducimos el margen inferior */
-            margin-bottom: 15px; 
+            /* Margen inferior muy reducido */
+            margin-bottom: 10px; 
             border-radius: 30px;
             border: 2px solid #6a0dad;
             background-color: #2a0050;
@@ -92,9 +94,9 @@
             align-items: center;
             justify-content: center;
             padding: 15px 30px;
-            /* Reducimos el margen superior */
-            margin-top: 10px; 
-            margin-bottom: 5px; /* Margen inferior para separarlo del borde */
+            /* Margen superior e inferior muy reducidos */
+            margin-top: 5px; 
+            margin-bottom: 5px; 
             background: linear-gradient(to right, #25D366, #1dbb5b); 
             color: white;
             text-decoration: none;
@@ -110,44 +112,13 @@
             transform: scale(1.03); 
             animation: none; 
         }
-        /* 📞 ICONO DE WHATSAPP REAL (Ajuste de la fuente para el icono) */
+        /* ✨ ÍCONO DE WHATSAPP DE FONT AWESOME ✨ */
         .whatsapp-icon {
             margin-right: 10px;
-            font-size: 1.5em;
-            /* Usamos la fuente Arial Black o similar para asegurar que el icono Unicode se vea bien */
-            font-family: 'Arial Black', Arial, sans-serif; 
+            font-size: 1.5em; /* Tamaño del icono */
         }
 
         /* DEFINICIÓN DE LA ANIMACIÓN DE PULSACIÓN DEL BOTÓN */
         @keyframes pulse {
             0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-        }
-
-        /* DEFINICIÓN DE LA ANIMACIÓN DE PULSACIÓN DEL BONO */
-        @keyframes pulse-bonus {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.03); }
-            100% { transform: scale(1); }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="LOGO SIN FONDO.png" class="logo" alt="WINZONE"> 
-        
-        <p class="title">ACCESO VIP EXCLUSIVO</p>
-        
-        <p class="bonus-text">BONO<br>20%</p>
-        
-        <p class="cta-text">ESCRIBINOS APRETANDO EL BOTÓN DE ABAJO</p>
-
-        <input type="text" class="name-input" placeholder="Ingresa tu nombre">
-
-        <a href="https://wa.me/543416404990?text=Hola%2C%20quiero%20reclamar%20mi%20Bono%20del%2020%25%20VIP." target="_blank" class="whatsapp-button">
-            <span class="whatsapp-icon">&#x260E;</span> OBTENER MI BONO AHORA
-        </a>
-    </div>
-</body>
-</html>
+            70% { transform: scale(1.05); box-shadow: 0 0 0
