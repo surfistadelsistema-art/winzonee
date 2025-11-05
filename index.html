@@ -1,67 +1,74 @@
-<style>
-    body {
-        font-family: sans-serif;
-        text-align: center;
-        padding: 20px;
-        background-color: #f4f4f4;
-        color: #333;
-    }
-    .container {
-        max-width: 600px;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 20px;
-    }
-    
-    /* ESTILOS DEL BOTÓN DE WHATSAPP */
-    .whatsapp-button {
-        display: inline-block;
-        padding: 15px 30px;
-        margin-top: 20px;
-        background-color: #25D366; /* Color de WhatsApp */
-        color: white;
-        text-decoration: none;
-        border-radius: 50px;
-        font-weight: bold;
-        font-size: 1.2em;
-        /* Habilitar Transiciones para efectos suaves */
-        transition: background-color 0.3s ease, transform 0.3s ease;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Página de Bienvenida - Bono 30%</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
         
-        /* 💡 APLICACIÓN DE LA ANIMACIÓN DE MOVIMIENTO CONSTANTE */
-        animation: pulse 1.5s infinite; /* Nombre, duración, repetir indefinidamente */
-    }
-    
-    /* Efecto al pasar el cursor (Hover) */
-    .whatsapp-button:hover {
-        background-color: #128C7E; /* Color más oscuro */
-        transform: scale(1.05); /* Se agranda ligeramente al pasar el mouse */
-        animation: none; /* Detenemos la animación constante al hacer hover */
-    }
+        /* 🟢 ESTILOS DEL BOTÓN DE WHATSAPP (AUMENTADO) 🟢 */
+        .whatsapp-button {
+            display: inline-block;
+            /* Aumentamos el relleno para hacerlo mucho más grande en móvil */
+            padding: 20px 40px; 
+            margin-top: 25px; 
+            background-color: #25D366; /* Color de WhatsApp */
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            /* Aumentamos el tamaño de la fuente */
+            font-size: 1.4em; 
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            
+            /* APLICACIÓN DE LA ANIMACIÓN DE MOVIMIENTO CONSTANTE */
+            animation: pulse 1.5s infinite; 
+        }
+        
+        /* Efecto al pasar el cursor (Hover) */
+        .whatsapp-button:hover {
+            background-color: #128C7E; 
+            transform: scale(1.05); 
+            animation: none; 
+        }
 
-    /* 🕺 DEFINICIÓN DE LA ANIMACIÓN (KEYFRAMES) */
-    @keyframes pulse {
-        0% {
-            transform: scale(1); /* Tamaño normal */
-            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); /* Sombra transparente */
+        /* DEFINICIÓN DE LA ANIMACIÓN (PULSACIÓN) */
+        @keyframes pulse {
+            0% {
+                transform: scale(1); 
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); 
+            }
+            70% {
+                transform: scale(1.05); 
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); 
+            }
+            100% {
+                transform: scale(1); 
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
         }
-        70% {
-            transform: scale(1.05); /* Se agranda ligeramente */
-            box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); /* La sombra se expande y se hace transparente */
-        }
-        100% {
-            transform: scale(1); /* Vuelve al tamaño normal */
-            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-        }
-    }
-</style>
+    </style>
 </head>
 <body>
     <div class="container">
@@ -70,12 +77,41 @@
         <h1>¡Hola y Bienvenido/a!</h1>
         <p>Estamos muy emocionados de verte por aquí. Queremos darte un:</p>
         <h2>🎁 Bono de Bienvenida 30% 🎁</h2>
-        <p>Hace clic en el botón de WhatsApp abajo para reclamar tu bono. Te responderemos lo antes posible.</p>
+        <p>Haz clic en el botón de WhatsApp abajo para reclamar tu bono. Te responderemos lo antes posible.</p>
 
         <a href="https://wa.me/543416404990?text=Hola%2C%20quiero%20reclamar%20mi%20Bono%20de%20Bienvenida." target="_blank" class="whatsapp-button">
             Chatear por WhatsApp
         </a>
         <p style="margin-top: 20px; font-size: 0.8em; color: #666;">*Se aplican términos y condiciones.</p>
+
+        ---
+
+        <div style="margin-top: 30px; padding: 15px; border-radius: 8px; background-color: #e6ffe6; border: 1px solid #25D366;">
+            <h3>¿Por qué contactarnos ahora?</h3>
+            <ul style="list-style: none; padding: 0; text-align: left; font-size: 1em;">
+                <li style="margin-bottom: 10px;">🏆 Recibe tu **Bono 30%** al instante.</li>
+                <li style="margin-bottom: 10px;">⚡ Atención al cliente **rápida** y 24/7.</li>
+                <li style="margin-bottom: 10px;">🔒 Plataforma **segura** y de confianza.</li>
+            </ul>
+        </div>
+        
+        ---
+
+        <h3 style="margin-top: 30px;">Preguntas Rápidas</h3>
+        <div style="text-align: left; margin-top: 15px; border: 1px solid #ddd; padding: 15px; border-radius: 5px;">
+            <p><strong>¿El bono tiene costo?</strong></p>
+            <p style="font-size: 0.9em; margin-top: -10px; color: #555;">No, es un regalo de bienvenida para nuevos usuarios, sin obligación de compra.</p>
+            
+            <p><strong>¿Tienen otras promociones?</strong></p>
+            <p style="font-size: 0.9em; margin-top: -10px; color: #555;">Sí, al contactarnos te informaremos sobre todas nuestras promociones activas.</p>
+        </div>
+        
+        ---
+        
+        <footer style="margin-top: 40px; padding-top: 15px; border-top: 1px solid #eee; font-size: 0.8em; color: #999;">
+            <p>&copy; 2025 [Tu Marca o Nombre]. Todos los derechos reservados.</p>
+            <p>Contacto: 543416404990</p>
+        </footer>
     </div>
 </body>
 </html>
