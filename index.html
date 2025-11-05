@@ -27,8 +27,9 @@
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
             border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
         }
+        /* 🖼️ LOGO (MODIFICADO: REDUCCIÓN DE TAMAÑO) */
         .logo {
-            max-width: 80%; /* Ajuste de tamaño para el logo */
+            max-width: 60%; /* ¡REDUCIDO A 60%! */
             height: auto;
             margin-bottom: 25px;
         }
@@ -39,18 +40,20 @@
             letter-spacing: 1px;
             text-transform: uppercase;
         }
+        /* ✨ BONO 20% (MODIFICADO: COLOR MÁS BRILLANTE Y ANIMACIÓN) */
         .bonus-text {
             font-size: 3.5em; /* Tamaño grande para el bono */
             font-weight: bold;
-            color: #ffd700; /* Dorado para el número */
+            color: #ffea00; /* ¡AMARILLO MÁS BRILLANTE! */
             text-shadow: 
-                -2px -2px 0 #8b4513, /* Sombra para efecto 3D */
-                2px -2px 0 #8b4513,
-                -2px 2px 0 #8b4513,
-                2px 2px 0 #8b4513,
+                -2px -2px 0 #b38800, /* Sombra ajustada al nuevo color */
+                2px -2px 0 #b38800,
+                -2px 2px 0 #b38800,
+                2px 2px 0 #b38800,
                 0px 5px 10px rgba(0,0,0,0.5); /* Sombra suave para profundidad */
             margin-bottom: 15px;
             line-height: 1.0;
+            animation: pulse-bonus 2s infinite; /* Aplicamos la nueva animación */
         }
         .cta-text {
             font-size: 1.1em;
@@ -59,50 +62,50 @@
             color: #e0e0e0;
         }
         .name-input {
-            width: calc(100% - 40px); /* Ancho completo menos padding */
+            width: calc(100% - 40px);
             padding: 15px 20px;
             margin-bottom: 20px;
-            border-radius: 30px; /* Bordes muy redondeados */
-            border: 2px solid #6a0dad; /* Borde púrpura */
-            background-color: #2a0050; /* Fondo oscuro */
+            border-radius: 30px;
+            border: 2px solid #6a0dad;
+            background-color: #2a0050;
             color: #ffffff;
             font-size: 1em;
             text-align: center;
-            box-sizing: border-box; /* Incluye padding y borde en el ancho */
+            box-sizing: border-box;
         }
         .name-input::placeholder {
             color: #bbb;
             opacity: 0.8;
         }
 
-        /* 🟢 ESTILOS DEL BOTÓN DE WHATSAPP (Adaptado al diseño) 🟢 */
+        /* 🟢 ESTILOS DEL BOTÓN DE WHATSAPP */
         .whatsapp-button {
-            display: flex; /* Para centrar el icono y texto */
+            display: flex; 
             align-items: center;
             justify-content: center;
-            padding: 15px 30px; /* Tamaño del botón */
+            padding: 15px 30px;
             margin-top: 20px;
-            background: linear-gradient(to right, #25D366, #1dbb5b); /* Degradado verde */
+            background: linear-gradient(to right, #25D366, #1dbb5b); 
             color: white;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
             font-size: 1.2em;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para el botón */
-            animation: pulse 1.5s infinite; /* Animación de pulsación */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: pulse 1.5s infinite; /* Animación de pulsación del botón */
         }
         .whatsapp-button:hover {
-            background: linear-gradient(to right, #1dbb5b, #128C7E); /* Degradado más oscuro al hover */
-            transform: scale(1.03); /* Se agranda ligeramente */
-            animation: none; /* Detenemos la animación constante al hacer hover */
+            background: linear-gradient(to right, #1dbb5b, #128C7E); 
+            transform: scale(1.03); 
+            animation: none; 
         }
         .whatsapp-icon {
             margin-right: 10px;
-            font-size: 1.5em; /* Tamaño del icono */
+            font-size: 1.5em; 
         }
 
-        /* DEFINICIÓN DE LA ANIMACIÓN (PULSACIÓN) */
+        /* DEFINICIÓN DE LA ANIMACIÓN DE PULSACIÓN DEL BOTÓN */
         @keyframes pulse {
             0% {
                 transform: scale(1); 
@@ -117,11 +120,25 @@
                 box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
             }
         }
+
+        /* 🕺 DEFINICIÓN DE LA ANIMACIÓN DE PULSACIÓN DEL BONO */
+        @keyframes pulse-bonus {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.03); /* Se agranda ligeramente a mitad del ciclo */
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="LOGO SIN FONDO.png" class="logo" alt="WINZONE"> 
+        
         <p class="title">ACCESO VIP EXCLUSIVO</p>
         <p class="bonus-text">BONO<br>20%</p>
         
